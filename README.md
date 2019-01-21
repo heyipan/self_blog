@@ -1,45 +1,15 @@
-**JEST 配置中的坑点**
 
 一，步骤
 
-    1.1 安装 npm install jest enzyme --save-dev
-        注释：jest 为测试运行环境，enzyme为类jquery操作API
+    1.1 安装 npm install
         
-    1.2 配置package.json jest
-
-        "jest": {
-         "verbose": true,
-         "testURL": "http://localhost",
-         "moduleFileExtensions": [
-           "js",
-           "jsx"
-         ],
-         "moduleNameMapper": {
-           "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-           ".*\\.(css|less|scss)$": "<rootDir>/__mock__/stub.css"
-         },
-         "transform": {
-           "^.+\\.jsx?$": "babel-jest"
-         }
-        } `  
-    
-    
-    1.3 配置package.json 中的测试script
-    
-        "scripts": {
-            "start": "http-server & webpack -w --config webpack.pro.js",
-            "pro": "webpack -p --config webpack.pro.js --progress",
-            "hot": "node server_hot.js",
-            "test": "jest" 
-          },
-          
-二、测试demo，见__test__下以spec.js或test.js结尾的文件
 
 
-三、运行测试
+
+二、运行测试
     npm run test //基于package.json
     
-四、坑点
+三、坑点
 
 **postcss**
     
@@ -71,7 +41,7 @@
     store：项目中store注册文件夹。
     template：index页面文件夹。
     utils：项目中通用组件所在位置。
-    entry.jsx：入口文件。
+    app.js || entry.jsx：入口文件。
 
 
 **Webpack4配置中的坑点**

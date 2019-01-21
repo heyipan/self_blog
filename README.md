@@ -2,10 +2,6 @@
 一，步骤
 
     1.1 安装 npm install
-        
-
-
-
 二、运行测试
     npm run test //基于package.json
     
@@ -36,7 +32,7 @@
     l18n：国际化文件，en_US.js用于注册en相关文件, zh_CN.js用于注册cn相关文件。
     reducer：项目中reducer注册文件夹。
     request：处理服务器请求相关方法，链接存放文件夹，包括index.js： 用于存放服务器请求相关方法；
-                                                         api.js：   用于存放外部请求链接。
+                                                         api.js：用于存放外部请求链接。
     router：项目中跳转链接注册文件夹。
     store：项目中store注册文件夹。
     template：index页面文件夹。
